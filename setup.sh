@@ -11,7 +11,7 @@ echo "🔧 Initializing project..."
 uv init --bare
 
 echo "📦 Installing JupyterLab and ipykernel..."
-uv add --dev jupyterlab ipykernel
+uv add --dev jupyterlab ipykernel pandas matplotlib numpy openai anthropic
 
 echo "🧠 Registering Jupyter kernel..."
 uv run python -m ipykernel install --user --name="$PROJECT_NAME" --display-name "$KERNEL_NAME"
