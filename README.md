@@ -1,5 +1,22 @@
 # Intro to Vibe Scripting
 
+## Installation
+
+First, install UV:
+
+**Linux/macOS:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+**Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+## Setup
+
+**Linux/macOS:**
 ```bash
 #!/bin/bash
 
@@ -21,4 +38,10 @@ uv run python -m ipykernel install --user --name="$PROJECT_NAME" --display-name 
 
 echo "✅ Setup complete. Run with:"
 echo "uv run jupyter lab"
+```
+
+**Windows (PowerShell):**
+Run the included `setup.ps1` script:
+```powershell
+.\setup.ps1
 ```
